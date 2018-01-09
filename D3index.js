@@ -6,6 +6,7 @@ var margin = { top: 20, right: 60, bottom: 60, left: 100 };
 var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 
+
 // Create an SVG wrapper, append an SVG group that will hold our chart, and shift the latter by left and top margins.
 var svg = d3.select(".chart")
   .append("svg")
@@ -225,7 +226,7 @@ chart.append("g")
 chart.append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - margin.left + 40)
-      .attr("x", 0 - (height / 2))
+      .attr("x", 0 - (height*0.8))
       .attr("dy", "1em")
       .attr("class", "axisText")
       .style("fill", "green")  
@@ -235,7 +236,7 @@ chart.append("text")
 chart.append("text")
       .attr("transform",  "rotate(-90)")   
       .attr("y", 0 - margin.right +width+ 85)
-      .attr("x", 0 - (height / 2))
+      .attr("x", 0 - (height*0.8))
       .attr("dy", "1em")
       .attr("class", "axisText")
       .text("Ratio of Local working to NonWorking Population");
