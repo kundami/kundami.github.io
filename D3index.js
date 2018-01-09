@@ -222,11 +222,10 @@ chart.append("g")
       .call(RightAxis);
 
 
-
 chart.append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - margin.left + 40)
-      .attr("x", 0 - (height*0.8))
+      .attr("x", 0 - (height / 1.2))
       .attr("dy", "1em")
       .attr("class", "axisText")
       .style("fill", "green")  
@@ -236,11 +235,13 @@ chart.append("text")
 chart.append("text")
       .attr("transform",  "rotate(-90)")   
       .attr("y", 0 - margin.right +width+ 85)
-      .attr("x", 0 - (height*0.8))
+      .attr("x", 0 - (height / 1.2))
       .attr("dy", "1em")
       .attr("class", "axisText")
       .text("Ratio of Local working to NonWorking Population");
  console.log("Line 248")
+
+
 
 
 // Append x-axis labels
